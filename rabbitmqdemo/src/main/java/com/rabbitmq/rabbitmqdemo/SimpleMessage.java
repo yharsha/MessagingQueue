@@ -26,6 +26,11 @@ public class SimpleMessage implements Serializable{
 		
 		// TODO Auto-generated constructor stub
 	}
+	@Override
+	public String toString() {
+		return "SimpleMessage [name=" + name + ", description=" + description + "]";
+	}
+	
 	
 	
 	

@@ -30,9 +30,7 @@ public class RabbitMqConfig {
 	Exchange myExchange()
 	{
 		return ExchangeBuilder.topicExchange("MyTopicExchange")
-				.autoDelete()
 				.durable(true)
-				.internal()
 				.build();
 	}
 	

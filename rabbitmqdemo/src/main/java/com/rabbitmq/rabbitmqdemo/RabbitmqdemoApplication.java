@@ -25,7 +25,7 @@ public class RabbitmqdemoApplication implements CommandLineRunner {
 		SimpleMessage simpleMessage = new SimpleMessage();
 		simpleMessage.setName("Delivery details");
 		simpleMessage.setDescription("From USA to India");
-		rabbitTemplate.convertAndSend("TestExchange", "TestRouting",
+		rabbitTemplate.convertAndSend("MyTopicExchange", "topic",
 				simpleMessage);
 	}
 
